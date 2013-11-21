@@ -33,7 +33,16 @@ describe('Listener', function(){
 	});
 
 	it('should notify callbacks when registered', function(done){
-	    var trigger = 'interact';
+	    var trigger = 'register';
+	    listener.addListener(trigger, function(){ done(); });
+
+	    listener.notifyOf(trigger);
+	});
+
+	it('should remove registered callbacks', function(done){
+	    var trigger = 'remove';
+	    var id = listener.addListener(trigger, function(){ expect(false).to.be.true; });
+	    listener.removeListener(id);
 	    listener.addListener(trigger, function(){ done(); });
 
 	    listener.notifyOf(trigger);
