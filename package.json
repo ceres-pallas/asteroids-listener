@@ -24,6 +24,6 @@
     "chai": "~1.8.1"
   },
   "dependencies": {
-    "hat": "0.0.3"
+    "asteroids-bag": "0.0.0"
   }
 }
