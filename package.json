@@ -1,0 +1,22 @@
+{
+  "name": "asteroids-listener",
+  "version": "0.0.0",
+  "description": "Custom implementation of the observer pattern tailored for Asteroids",
+  "main": "lib/listener.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ceres-pallas/asteroids-listener.git"
+  },
+  "keywords": [
+    "asteroids",
+    "observer"
+  ],
+  "author": "Daan van Berkel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ceres-pallas/asteroids-listener/issues"
+  }
+}
