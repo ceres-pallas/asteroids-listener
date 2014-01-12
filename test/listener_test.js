@@ -39,12 +39,23 @@ describe('Listener', function(){
 	    listener.notifyOf(trigger);
 	});
 
+	it('should notify callbacks with arguments when registered', function(){
+	    var trigger = 'register';
+
+	    listener.addListener(trigger, function(a,b){ 
+		expect(a).to.equal('a');
+		expect(b).to.equal('b');
+	    });
+
+	    listener.notifyOf(trigger, 'a', 'b');
+	});
+
 	it('should remove registered callbacks', function(done){
 	    var trigger = 'remove';
 	    var id = listener.addListener(trigger, function(){ expect(false).to.be.true; });
 	    listener.removeListener(id);
 	    listener.addListener(trigger, function(){ done(); });
-
+	    
 	    listener.notifyOf(trigger);
 	});
     });
