@@ -1,6 +1,6 @@
 {
   "name": "asteroids-listener",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Custom implementation of the observer pattern tailored for Asteroids",
   "main": "lib/listener.js",
   "scripts": {
