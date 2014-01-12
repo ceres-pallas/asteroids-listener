@@ -1,4 +1,4 @@
-asteroids-listener
+asteroids-listener [![Build Status](https://travis-ci.org/ceres-pallas/asteroids-listener.png?branch=master)](https://travis-ci.org/ceres-pallas/asteroids-listener)
 ==================
 
 Custom implementation of the observer pattern tailored for Asteroids
